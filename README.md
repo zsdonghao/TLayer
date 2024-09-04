@@ -23,7 +23,7 @@
 
 # Please click [TensorLayerX](https://github.com/tensorlayer/tensorlayerx) 🔥🔥🔥
 
-[TensorLayer](https://tensorlayer.readthedocs.io) is a novel TensorFlow-based deep learning and reinforcement learning library designed for researchers and engineers. It provides an extensive collection of customizable neural layers to build advanced AI models quickly, based on this, the community open-sourced mass [tutorials](https://github.com/tensorlayer/tensorlayer/blob/master/examples/reinforcement_learning/README.md) and [applications](https://github.com/tensorlayer). TensorLayer is awarded the 2017 Best Open Source Software by the [ACM Multimedia Society](https://twitter.com/ImperialDSI/status/923928895325442049). 
+[TensorLayer](https://tensorlayer.readthedocs.io) is a novel TensorFlow-based deep learning and reinforcement learning library designed for researchers and engineers. It provides an extensive collection of customizable neural layers to build advanced AI models quickly, based on this, the community open-sourced mass [tutorials](https://github.com/tensorlayer/tensorlayer/blob/master/examples/reinforcement_learning/README.md) and [applications](https://github.com/tensorlayer). TensorLayer is awarded the 2017 Best Open Source Software by the [ACM Multimedia Society](https://twitter.com/ImperialDSI/status/923928895325442049).
 This project can also be found at [OpenI](https://git.openi.org.cn/TensorLayer/tensorlayer3.0) and [Gitee](https://gitee.com/organizations/TensorLayer).
 
 # News
@@ -39,14 +39,14 @@ This project can also be found at [OpenI](https://git.openi.org.cn/TensorLayer/t
 
 TensorLayer is a new deep learning library designed with simplicity, flexibility and high-performance in mind.
 
-- ***Simplicity*** : TensorLayer has a high-level layer/model abstraction which is effortless to learn. You can learn how deep learning can benefit your AI tasks in minutes through the massive [examples](https://github.com/tensorlayer/awesome-tensorlayer).
-- ***Flexibility*** : TensorLayer APIs are transparent and flexible, inspired by the emerging PyTorch library. Compared to the Keras abstraction, TensorLayer makes it much easier to build and train complex AI models.
-- ***Zero-cost Abstraction*** : Though simple to use, TensorLayer does not require you to make any compromise in the performance of TensorFlow (Check the following benchmark section for more details).
+- **_Simplicity_** : TensorLayer has a high-level layer/model abstraction which is effortless to learn. You can learn how deep learning can benefit your AI tasks in minutes through the massive [examples](https://github.com/tensorlayer/awesome-tensorlayer).
+- **_Flexibility_** : TensorLayer APIs are transparent and flexible, inspired by the emerging PyTorch library. Compared to the Keras abstraction, TensorLayer makes it much easier to build and train complex AI models.
+- **_Zero-cost Abstraction_** : Though simple to use, TensorLayer does not require you to make any compromise in the performance of TensorFlow (Check the following benchmark section for more details).
 
 TensorLayer stands at a unique spot in the TensorFlow wrappers. Other wrappers like Keras and TFLearn
 hide many powerful features of TensorFlow and provide little support for writing custom AI models. Inspired by PyTorch, TensorLayer APIs are simple, flexible and Pythonic,
 making it easy to learn while being flexible enough to cope with complex AI tasks.
-TensorLayer has a fast-growing community. It has been used by researchers and engineers all over the world, including those from  Peking University,
+TensorLayer has a fast-growing community. It has been used by researchers and engineers all over the world, including those from Peking University,
 Imperial College London, UC Berkeley, Carnegie Mellon University, Stanford University, and companies like Google, Microsoft, Alibaba, Tencent, Xiaomi, and Bloomberg.
 
 # Multilingual Documents
@@ -71,7 +71,7 @@ You can find a large collection of examples that use TensorLayer in [here](examp
 	</div>
 </a>
 
-# Getting Start
+# Getting Started
 
 TensorLayer 2.0 relies on TensorFlow, numpy, and others. To use GPUs, CUDA and cuDNN are required.
 
@@ -95,6 +95,7 @@ pip3 install git+https://github.com/tensorlayer/tensorlayer.git
 ```
 
 If you want to install the additional dependencies, you can also run
+
 ```bash
 pip3 install --upgrade tensorlayer[all]              # all additional dependencies
 pip3 install --upgrade tensorlayer[extra]            # only the `extra` dependencies
@@ -144,13 +145,13 @@ nvidia-docker run -it --rm -p 8888:8888 -p 6006:6006 -e PASSWORD=JUPYTER_NB_PASS
 
 The following table shows the training speeds of [VGG16](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) using TensorLayer and native TensorFlow on a TITAN Xp.
 
-|   Mode    |       Lib       |  Data Format  | Max GPU Memory Usage(MB)  |Max CPU Memory Usage(MB) | Avg CPU Memory Usage(MB) | Runtime (sec) |
-| :-------: | :-------------: | :-----------: | :-----------------: | :-----------------: | :-----------------: | :-----------: |
-| AutoGraph | TensorFlow 2.0  | channel last  | 11833 |      2161         |        2136         |      74       |
-|           | TensorLayer 2.0 | channel last  | 11833 |      2187         |        2169         |      76       |
-|   Graph   |      Keras      | channel last  | 8677 |      2580         |        2576         |      101       |
-|   Eager   | TensorFlow 2.0  | channel last  | 8723 |      2052         |        2024         |      97       |
-|           | TensorLayer 2.0 | channel last  | 8723 |      2010         |        2007         |      95       |
+|   Mode    |       Lib       | Data Format  | Max GPU Memory Usage(MB) | Max CPU Memory Usage(MB) | Avg CPU Memory Usage(MB) | Runtime (sec) |
+| :-------: | :-------------: | :----------: | :----------------------: | :----------------------: | :----------------------: | :-----------: |
+| AutoGraph | TensorFlow 2.0  | channel last |          11833           |           2161           |           2136           |      74       |
+|           | TensorLayer 2.0 | channel last |          11833           |           2187           |           2169           |      76       |
+|   Graph   |      Keras      | channel last |           8677           |           2580           |           2576           |      101      |
+|   Eager   | TensorFlow 2.0  | channel last |           8723           |           2052           |           2024           |      97       |
+|           | TensorLayer 2.0 | channel last |           8723           |           2010           |           2007           |      95       |
 
 # Getting Involved
 
